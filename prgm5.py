@@ -1,9 +1,12 @@
 import sys
 
-p = float(input(sys.argv[1]))
-r = float(input(sys.argv[2]))
-t = float(input(sys.argv[3]))
+principal = float(sys.argv[1])
+rate = float(sys.argv[2])
+time = float(sys.argv[3])
 
-si = (p * r * t) / 100
+si = (principal * rate * time) / 100
 
-print("Simple Interest:", si)
+print(f"Principal: {principal}")
+print(f"Rate: {rate}")
+print(f"Time: {time}")
+print(f"Simple Interest: {si}")
