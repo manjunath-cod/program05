@@ -1,7 +1,8 @@
+import sys
 
-p = float(input("Enter principal amount: "))
-r = float(input("Enter rate of interest: "))
-t = float(input("Enter time in years: "))
+p = float(input(sys.argv[1]))
+r = float(input(sys.argv[2]))
+t = float(input(sys.argv[3]))
 
 si = (p * r * t) / 100
 
